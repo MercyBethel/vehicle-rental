@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough">
+    <h:head>
+        <title>VEHICLES RENTAL</title>
+        <style>
+            body{
+                background-image:url("imgf/Hcar.jpeg");
+            }
+            .Divnav{
+               background: #000000;
+               overflow:hidden;
+               size:30px;
+                
+            }
+            .Divnav a{
+                color:#ffffff;
+                font-size:13px;
+                float:left;
+                text-align: center;
+                padding:14px 16px ;
+                text-decoration:none;
+                font-family: sans-serif;
+                
+            }
+            .Divnav a:hover{
+                color:#33ffcc;
+            }
+            .cont{
+                width:400px;
+                border-color:white;
+                background-color:rgba(0,0,0,0.6);
+                border-radius:30px;
+                margin-top:80px;
+                margin-left:50px;
+            }
+            .main{
+                text-align:center;
+            }
+            .DivB{
+                margin-left:10px;
+            }
+            
+            .tf{
+                width:250px;
+                height:30px;
+                border:none;
+            }
+            p{
+                color: #ffffff;
+                font-size:15px;
+                font-family:sans-serif;
+            }
+            
+             .Btn{
+                width:250px;
+                height:50px;
+                
+                color:#fffcff;
+                text-align: center;
+                margin:30px 0;
+                 
+                border: #3399ff solid 2px ;
+                background-color: rgba(0,0,0,0.6);
+                
+            }
+            .Btn:hover{
+                border-color:#3399ff;
+                background-color:#3399ff;
+                    
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+            <div class="Divnav"> 
+            <a href="adminPage.xhtml"> ADD VEHICLES</a>
+            <a href="delete.xhtml">DELETE VEHICLES</a>
+            <a href="update.xhtml">UPDATE VEHICLES</a>
+             <a href="viewVehicles.xhtml"> VIEW VEHICLES</a>
+             <a href="availableVhicles.xhtml"> AVAILABlE VEHICLES</a>
+             <a href="rentedVehicles.xhtml"  > RENTED VEHICLES</a>
+             <a href="custumView.xhtml"> VIEW CUSTOMERS</a>
+             <a href="adminAccount.xhtml">MY ACCOUNT</a>
+             <a href="index.xhtml" >LOGOUT</a>
+             </div>
+            
+            <div class="cont">
+                
+                <div class="main"> 
+                  
+                    <h3 style="color:#ffffff ">UPDATE VEHICLE</h3>
+                    <br></br>  
+                    
+                    <div>
+                      <br></br>  
+                      <h:inputText  class="tf"  a:placeholder="Vehicle ID" value="#{updatePrice.id}"> </h:inputText>
+                    <br></br> 
+                    </div>
+                     
+                    
+                     <div  >
+                         <br></br> 
+                         <h:inputText  class="tf"  a:placeholder="Price per day" value="#{updatePrice.price}"> </h:inputText>
+                     <br></br> 
+                    </div>
+                    
+                     
+                      
+               
+                    <div> 
+                        <p> </p>  <p> </p>
+                        <h:commandButton class="Btn"   value="UPDATE" action="#{updatePrice.updateP()}"></h:commandButton>
+                    </div>
+                    
+                </div>
+            
+            </div>
+
+            
+            
+        </h:form>
+    </h:body>
+</html>

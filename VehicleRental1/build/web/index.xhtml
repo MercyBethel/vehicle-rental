@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>VEHICLE RENTAL</title>
+        
+        <style>
+            
+             body{
+                background-image:url("imgf/Hcar.jpeg");
+            }
+            .btn{
+                background: #000000;
+                color: #fffcff;
+                font-size: 15px;
+                padding: 0px 20px 10px 20px;
+                text-align:center; 
+                height:40px;
+                border: none;
+            }
+            .btn:hover{
+                color:#33ffcc;
+                background-color:rgba(0,0,0,0.1)
+            }
+            .txt{
+                color:#fffcff;
+                font-size:100px;
+                font-weight:bold;
+                padding-left:180px;
+                padding-top: 150px;
+            }
+             
+        </style>
+        
+        
+    </h:head>
+    <h:body>
+         <h:form>
+           
+            <h:commandButton  action="index.xhtml" value="HOME" class="btn" ></h:commandButton> 
+            <h:commandButton  action="VEHICLES.xhtml" value="VEHICLES" class="btn"   ></h:commandButton> 
+            <h:commandButton  action="LOGin.xhtml" value="LOGIN" class="btn" ></h:commandButton> 
+            
+            <div class="txt"> VEHICLE RENTAL </div>
+          
+        </h:form>
+    </h:body>
+</html>
